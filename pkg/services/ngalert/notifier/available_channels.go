@@ -340,5 +340,21 @@ func GetAvailableNotifiers() []*alerting.NotifierPlugin {
 				},
 			},
 		},
+		{
+			Type:        "victorops",
+			Name:        "VictorOps",
+			Description: "Sends notifications to VictorOps",
+			Heading:     "VictorOps settings",
+			Options: []alerting.NotifierOption{
+				{
+					Label:        "Url",
+					Element:      alerting.ElementTypeInput,
+					InputType:    alerting.InputTypeText,
+					Placeholder:  "VictorOps url",
+					PropertyName: "url",
+					Required:     true,
+				},
+			},
+		},
 	}
 }

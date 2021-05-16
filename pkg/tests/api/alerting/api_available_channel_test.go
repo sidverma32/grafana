@@ -664,6 +664,31 @@ var expAvailableChannelJsonOutput = `
         "secure": false
       }
     ]
+  },
+  {
+    "type": "victorops",
+    "name": "VictorOps",
+    "heading": "VictorOps settings",
+    "description": "Sends notifications to VictorOps",
+    "info": "",
+    "options": [
+      {
+        "element": "input",
+        "inputType": "text",
+        "label": "Url",
+        "description": "",
+        "placeholder": "VictorOps url",
+        "propertyName": "url",
+        "selectOptions": null,
+        "showWhen": {
+          "field": "",
+          "is": ""
+        },
+        "required": true,
+        "validationRule": "",
+        "secure": false
+      }
+    ]
   }
 ]
 `
